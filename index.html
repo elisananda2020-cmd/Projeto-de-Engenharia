@@ -69,7 +69,43 @@
   </div>
 </section>
 
-<!-- COMO FUNCIONA  -->
+<!-- EQUIPE (preview) -->
+<section class="team-section">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-label">Nossa equipe</p>
+      <h2 class="section-title">As pessoas por trás<br>do SGT-AC.</h2>
+    </div>
+    <p class="section-desc">Quatro especialistas reunidos pela incubadora do IFAC para entregar uma solução real ao DETRAN-AC.</p>
+  </div>
+  <div class="team-grid reveal">
+    <div class="team-card">
+      <div class="team-avatar">E</div>
+      <div class="team-name">Elis Ananda</div>
+      <div class="team-role">Desenvolvedora</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">M</div>
+      <div class="team-name">Marisol Assunção</div>
+      <div class="team-role">Analista de Sistemas</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">N</div>
+      <div class="team-name">Nathan Rodrigues</div>
+      <div class="team-role">Arquitetura de Software</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">P</div>
+      <div class="team-name">Pâmela Bruna</div>
+      <div class="team-role">Documentação · Gestão</div>
+    </div>
+  </div>
+  <div class="how-cta reveal">
+    <a href="equipe.html" class="btn btn-secondary">Ver perfis completos →</a>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA (preview) -->
 <section>
   <div class="section-header reveal">
     <div>
@@ -109,53 +145,7 @@
   </div>
 </section>
 
-<!-- EQUIPE  -->
-<section class="team-section">
-  <div class="section-header reveal">
-    <div>
-      <p class="section-label">Nossa equipe</p>
-      <h2 class="section-title">As pessoas por trás<br>do SGT-AC.</h2>
-    </div>
-    <p class="section-desc">Cinco especialistas reunidos pela incubadora do IFAC para entregar uma solução real ao DETRAN-AC.</p>
-  </div>
-  <div class="team-grid reveal">
-    <div class="team-card">
-      <div class="team-avatar">
-        <img src="fotos/elis.jpg" alt="Elis Ananda" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <span class="avatar-fallback">E</span>
-      </div>
-      <div class="team-name">Elis Ananda</div>
-      <div class="team-role">Desenvolvedora</div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar">
-        <img src="fotos/marisol.jpg" alt="Marisol Assunção" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <span class="avatar-fallback">M</span>
-      </div>
-      <div class="team-name">Marisol Assunção</div>
-      <div class="team-role">Analista de Sistemas</div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar">
-        <img src="fotos/nathan.jpg" alt="Nathan Rodrigues" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <span class="avatar-fallback">N</span>
-      </div>
-      <div class="team-name">Nathan Rodrigues</div>
-      <div class="team-role">Arquitetura de Software</div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar">
-        <img src="fotos/pamela.jpg" alt="Pâmela Bruna" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <span class="avatar-fallback">P</span>
-      </div>
-      <div class="team-name">Pâmela Bruna</div>
-      <div class="team-role">Documentação · Gestão</div>
-    </div>
-  </div>
-  <div class="how-cta reveal">
-    <a href="equipe.html" class="btn btn-secondary">Ver perfis completos →</a>
-  </div>
-</section>
+<!-- ARQUITETURA (preview) -->
 <section class="arch-section">
   <div class="section-header reveal">
     <div>
@@ -255,18 +245,7 @@
   </div>
 </footer>
 
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 80);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+<script src="js/main.js" defer></script>
 
 </body>
 </html>
