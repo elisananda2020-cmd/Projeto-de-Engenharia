@@ -1,34 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
-    <title>Cubo Quântico</title>
-     <link rel="icon" type="image/png" href="img/logo1.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGT-AC — Cubo Quântico</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="banner">
-    <h1 class="title">Otimização do trânsito de Rio Branco</h1>
-    <h2>Integrantes do projeto: </h2>
-    <ul>
-        <li>Ariel </li>
-        <li>Elis Ananda</li>
-        <li>Marisol Assunção</li>
-        <li>Nathan</li>
-        <li>Pamela Bruna</li>
-    </ul>
 
-    <h2>Objetivos do projeto</h2>
-       <ul>
-        <li>Planejamos... </li>
-        <li>Planejamos... </li>
-        <li>Planejamos... </li>
-    </ul>
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    </div>
+    <div>
+      <span class="logo-text">Cubo Quântico</span>
+      <span class="logo-sub">SGT-AC · Rio Branco</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Início</a></li>
+    <li><a href="equipe.html">Equipe</a></li>
+    <li><a href="sistema.html">Sistema</a></li>
+    <li><a href="arquitetura.html">Arquitetura</a></li>
+    <li><a href="#contato" class="nav-cta">Contato</a></li>
+  </ul>
+</nav>
 
-</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-blob"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">
+      Trânsito<br>
+      <em>inteligente</em><br>
+      para o Acre.
+    </h1>
+    <p class="hero-desc">
+      O SGT-AC é um sistema de gerenciamento de tráfego com inteligência artificial que moderniza semáforos, monitora vias em tempo real e conecta o cidadão ao trânsito de Rio Branco.
+    </p>
+    <div class="hero-actions">
+      <a href="sistema.html" class="btn btn-primary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Ver o sistema
+      </a>
+      <a href="equipe.html" class="btn btn-secondary">Conhecer a equipe</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number">15</div>
+        <div class="stat-label">cruzamentos inteligentes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">20</div>
+        <div class="stat-label">câmeras com IA</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">&lt; 2s</div>
+        <div class="stat-label">tempo de resposta</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">99,9%</div>
+        <div class="stat-label">disponibilidade</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA  -->
+<section>
+  <div class="section-header reveal">
+    <div>
+      <p class="section-label">Como funciona</p>
+      <h2 class="section-title">Três camadas que<br>movem a cidade.</h2>
+    </div>
+    <p class="section-desc">O sistema opera em ciclos de eventos em tempo real, do sensor ao semáforo, em menos de 2 segundos.</p>
+  </div>
+  <div class="how-grid reveal">
+    <div class="how-card">
+      <div class="how-number">01</div>
+      <div class="how-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+      </div>
+      <div class="how-title">Câmeras e sensores capturam</div>
+      <div class="how-text">20 câmeras com IA e 200 sensores Doppler monitoram fluxo, velocidade e densidade em tempo real.</div>
+    </div>
+    <div class="how-card">
+      <div class="how-number">02</div>
+      <div class="how-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <div class="how-title">IA Central processa e decide</div>
+      <div class="how-text">O núcleo de IA analisa todos os cruzamentos simultaneamente e envia comandos automáticos aos semáforos.</div>
+    </div>
+    <div class="how-card">
+      <div class="how-number">03</div>
+      <div class="how-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      </div>
+      <div class="how-title">Cidadão e DETRAN são notificados</div>
+      <div class="how-text">O app Moveline e o BINA avisam motoristas em tempo real, enquanto o dashboard informa a equipe do DETRAN.</div>
+    </div>
+  </div>
+  <div class="how-cta reveal">
+    <a href="sistema.html" class="btn btn-primary">Ver funcionamento completo →</a>
+  </div>
+</section>
+
+<!-- EQUIPE  -->
+<section class="team-section">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-label">Nossa equipe</p>
+      <h2 class="section-title">As pessoas por trás<br>do SGT-AC.</h2>
+    </div>
+    <p class="section-desc">Cinco especialistas reunidos pela incubadora do IFAC para entregar uma solução real ao DETRAN-AC.</p>
+  </div>
+  <div class="team-grid reveal">
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="fotos/elis.jpg" alt="Elis Ananda" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">E</span>
+      </div>
+      <div class="team-name">Elis Ananda</div>
+      <div class="team-role">Desenvolvedora</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="fotos/marisol.jpg" alt="Marisol Assunção" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">M</span>
+      </div>
+      <div class="team-name">Marisol Assunção</div>
+      <div class="team-role">Analista de Sistemas</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="fotos/nathan.jpg" alt="Nathan Rodrigues" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">N</span>
+      </div>
+      <div class="team-name">Nathan Rodrigues</div>
+      <div class="team-role">Arquitetura de Software</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="fotos/pamela.jpg" alt="Pâmela Bruna" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">P</span>
+      </div>
+      <div class="team-name">Pâmela Bruna</div>
+      <div class="team-role">Documentação · Gestão</div>
+    </div>
+  </div>
+  <div class="how-cta reveal">
+    <a href="equipe.html" class="btn btn-secondary">Ver perfis completos →</a>
+  </div>
+</section>
+<section class="arch-section">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-label">Arquitetura</p>
+      <h2 class="section-title">Event-Driven + Layers.</h2>
+    </div>
+    <p class="section-desc">Cada detecção de congestionamento dispara uma cadeia de reações automáticas em tempo real.</p>
+  </div>
+  <div class="arch-layers reveal">
+    <div class="arch-layer">
+      <span class="arch-layer-num">01</span>
+      <span class="arch-layer-name">Sensores — Produtores de Eventos</span>
+      <span class="arch-layer-desc">Câmeras IA · Sensores Doppler · Gateways LoRaWAN · Fibra/4G-5G</span>
+      <div class="arch-tags">
+        <span class="arch-tag">Hardware</span>
+        <span class="arch-tag">Edge Computing</span>
+      </div>
+    </div>
+    <div class="arch-layer">
+      <span class="arch-layer-num">02</span>
+      <span class="arch-layer-name">IA Central — Event Broker</span>
+      <span class="arch-layer-desc">Núcleo IA · Servidor DETRAN · Módulo Edge · API Gateway</span>
+      <div class="arch-tags">
+        <span class="arch-tag">IA</span>
+        <span class="arch-tag">Processamento</span>
+      </div>
+    </div>
+    <div class="arch-layer">
+      <span class="arch-layer-num">03</span>
+      <span class="arch-layer-name">Consumidores — Interfaces e Reações</span>
+      <span class="arch-layer-desc">Controlador Semafórico · Dashboard DETRAN · BINA · Moveline</span>
+      <div class="arch-tags">
+        <span class="arch-tag">App</span>
+        <span class="arch-tag">Dashboard</span>
+      </div>
+    </div>
+    <div class="arch-layer">
+      <span class="arch-layer-num">04</span>
+      <span class="arch-layer-name">Usuários Finais</span>
+      <span class="arch-layer-desc">Semáforos digitais · Operadores DETRAN · Cidadãos</span>
+      <div class="arch-tags">
+        <span class="arch-tag">Usuário</span>
+      </div>
+    </div>
+  </div>
+  <div class="arch-cta reveal">
+    <a href="arquitetura.html" class="btn btn-white">Ver diagrama completo →</a>
+  </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer id="contato">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <span class="logo-text">Cubo Quântico</span>
+          <span class="logo-sub">Incubadora IFAC · Rio Branco, AC</span>
+        </div>
+      </a>
+      <p class="footer-desc">Empresa de tecnologia desenvolvida na incubadora do IFAC, especializada em soluções inteligentes para gestão urbana.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="sistema.html">Sistema</a></li>
+        <li><a href="arquitetura.html">Arquitetura</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Sistema</h4>
+      <ul>
+        <li><a href="sistema.html">Como funciona</a></li>
+        <li><a href="arquitetura.html">Diagrama de camadas</a></li>
+        <li><a href="sistema.html#requisitos">Requisitos</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contato</h4>
+      <p>📍 Rio Branco — Acre</p>
+      <p>🏫 IFAC — Incubadora de Empresas</p>
+      <p>📅 Proposta · Dezembro 2025</p>
+      <a href="https://wa.me/55" target="_blank" class="whatsapp-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.524 5.843L.057 23.928l6.234-1.635A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.369l-.36-.214-3.7.97 1.013-3.597-.235-.37A9.818 9.818 0 012.182 12c0-5.42 4.398-9.818 9.818-9.818 5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+        Falar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Cubo Quântico · Todos os direitos reservados.</p>
+    <p>Proposta técnica para o DETRAN-AC · Rio Branco, Acre</p>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
 </body>
-
 </html>
