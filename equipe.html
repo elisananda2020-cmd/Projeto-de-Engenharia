@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipe — Cubo Quântico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    </div>
+    <div>
+      <span class="logo-text">Cubo Quântico</span>
+      <span class="logo-sub">SGT-AC · Rio Branco</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="equipe.html" class="active">Equipe</a></li>
+    <li><a href="sistema.html">Sistema</a></li>
+    <li><a href="arquitetura.html">Arquitetura</a></li>
+    <li><a href="index.html#contato" class="nav-cta">Contato</a></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- MENU MOBILE OVERLAY -->
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="equipe.html" class="active">Equipe</a></li>
+    <li><a href="sistema.html">Sistema</a></li>
+    <li><a href="arquitetura.html">Arquitetura</a></li>
+    <li><a href="index.html#contato">Contato</a></li>
+  </ul>
+</div>
+
+<!-- PAGE HEADER -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <p class="section-label">Nossa equipe</p>
+    <h1 class="page-hero-title">As pessoas que<br>constroem o <em>SGT-AC.</em></h1>
+    <p class="page-hero-desc">Desenvolvido pela Cubo Quântico, equipe da incubadora do IFAC, o SGT-AC reúne profissionais de sistemas, análise e gestão para modernizar o trânsito de Rio Branco.</p>
+  </div>
+</section>
+
+<!-- EQUIPE GRID -->
+<section class="team-page-section">
+  <div class="team-page-grid reveal">
+
+    <!-- Elis Ananda -->
+    <div class="team-page-card">
+      <div class="team-page-avatar">
+        <img src="fotos/elis.jpg" alt="Elis Ananda"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">E</span>
+      </div>
+      <div class="team-page-info">
+        <div class="team-page-header">
+          <div>
+            <h3 class="team-page-name">Elis Ananda</h3>
+            <span class="team-page-role">Desenvolvedora</span>
+          </div>
+          <span class="team-page-badge">Desenvolvimento</span>
+        </div>
+        <p class="team-page-bio">
+          Responsável pelo desenvolvimento das interfaces do sistema, incluindo o app Moveline e a integração com o painel de controle do DETRAN.
+        </p>
+        <div class="team-page-tags">
+          <span class="team-tag">Frontend</span>
+          <span class="team-tag">App Moveline</span>
+          <span class="team-tag">UI/UX</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marisol Assunção -->
+    <div class="team-page-card">
+      <div class="team-page-avatar">
+        <img src="fotos/marisol.jpg" alt="Marisol Assunção"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">M</span>
+      </div>
+      <div class="team-page-info">
+        <div class="team-page-header">
+          <div>
+            <h3 class="team-page-name">Marisol Assunção</h3>
+            <span class="team-page-role">Analista de Sistemas</span>
+          </div>
+          <span class="team-page-badge">Análise</span>
+        </div>
+        <p class="team-page-bio">
+          Conduz o levantamento e a validação dos requisitos funcionais e não funcionais do SGT-AC, garantindo que o sistema atenda às necessidades do DETRAN-AC.
+        </p>
+        <div class="team-page-tags">
+          <span class="team-tag">Requisitos</span>
+          <span class="team-tag">UML</span>
+          <span class="team-tag">Documentação</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nathan Rodrigues -->
+    <div class="team-page-card">
+      <div class="team-page-avatar">
+        <img src="fotos/nathan.jpg" alt="Nathan Rodrigues"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">N</span>
+      </div>
+      <div class="team-page-info">
+        <div class="team-page-header">
+          <div>
+            <h3 class="team-page-name">Nathan Rodrigues</h3>
+            <span class="team-page-role">Arquitetura de Software</span>
+          </div>
+          <span class="team-page-badge">Arquitetura</span>
+        </div>
+        <p class="team-page-bio">
+          Define a arquitetura Event-Driven + Layers do sistema, estruturando a comunicação entre sensores, IA central, semáforos e interfaces do cidadão.
+        </p>
+        <div class="team-page-tags">
+          <span class="team-tag">Event-Driven</span>
+          <span class="team-tag">Layers</span>
+          <span class="team-tag">Backend</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pâmela Bruna -->
+    <div class="team-page-card">
+      <div class="team-page-avatar">
+        <img src="fotos/pamela.jpg" alt="Pâmela Bruna"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">P</span>
+      </div>
+      <div class="team-page-info">
+        <div class="team-page-header">
+          <div>
+            <h3 class="team-page-name">Pâmela Bruna</h3>
+            <span class="team-page-role">Documentação · Gestão</span>
+          </div>
+          <span class="team-page-badge">Gestão</span>
+        </div>
+        <p class="team-page-bio">
+          Coordena a produção de documentação técnica do projeto e o gerenciamento das entregas, assegurando que o cronograma e os padrões de qualidade sejam cumpridos.
+        </p>
+        <div class="team-page-tags">
+          <span class="team-tag">Gestão</span>
+          <span class="team-tag">Documentação</span>
+          <span class="team-tag">Cronograma</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SOBRE A EMPRESA -->
+<section class="about-section">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-label">Sobre a empresa</p>
+      <h2 class="section-title">Cubo Quântico.</h2>
+    </div>
+    <p class="section-desc">Startup de tecnologia nascida na incubadora do IFAC, com foco em soluções inteligentes para gestão urbana e mobilidade.</p>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-card">
+      <div class="how-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <h4 class="about-card-title">4 especialistas</h4>
+      <p class="about-card-text">Equipe multidisciplinar cobrindo desenvolvimento, análise, arquitetura e gestão.</p>
+    </div>
+    <div class="about-card">
+      <div class="how-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <h4 class="about-card-title">6 meses de entrega</h4>
+      <p class="about-card-text">Prazo de implementação acordado com o DETRAN-AC para entrega do sistema completo.</p>
+    </div>
+    <div class="about-card">
+      <div class="how-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <h4 class="about-card-title">Incubadora IFAC</h4>
+      <p class="about-card-text">Projeto desenvolvido dentro do ecossistema de inovação do Instituto Federal do Acre.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer id="contato">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <span class="logo-text">Cubo Quântico</span>
+          <span class="logo-sub">Incubadora IFAC · Rio Branco, AC</span>
+        </div>
+      </a>
+      <p class="footer-desc">Empresa de tecnologia desenvolvida na incubadora do IFAC, especializada em soluções inteligentes para gestão urbana.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="sistema.html">Sistema</a></li>
+        <li><a href="arquitetura.html">Arquitetura</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Sistema</h4>
+      <ul>
+        <li><a href="sistema.html">Como funciona</a></li>
+        <li><a href="arquitetura.html">Diagrama de camadas</a></li>
+        <li><a href="sistema.html#requisitos">Requisitos</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contato</h4>
+      <p>📍 Rio Branco — Acre</p>
+      <p>🏫 IFAC — Incubadora de Empresas</p>
+      <p>📅 Proposta · Dezembro 2025</p>
+      <a href="https://wa.me/55" target="_blank" class="whatsapp-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.524 5.843L.057 23.928l6.234-1.635A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.369l-.36-.214-3.7.97 1.013-3.597-.235-.37A9.818 9.818 0 012.182 12c0-5.42 4.398-9.818 9.818-9.818 5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+        Falar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Cubo Quântico · Todos os direitos reservados.</p>
+    <p>Proposta técnica para o DETRAN-AC · Rio Branco, Acre</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
