@@ -1,4 +1,3 @@
-// ── SCROLL REVEAL ──
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -10,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// ── HAMBURGER MENU ──
+// ── MENU HAMBURGER  ──
 const hamburger = document.getElementById('nav-hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 
