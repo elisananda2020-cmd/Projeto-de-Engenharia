@@ -1,3 +1,7 @@
+const revealEls = document.querySelectorAll('.reveal');
+
+revealEls.forEach(el => el.classList.add('reveal-init'));
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -7,9 +11,9 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+revealEls.forEach(el => observer.observe(el));
 
-// ── MENU HAMBURGER  ──
+// ── HAMBURGER MENU ──
 const hamburger = document.getElementById('nav-hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 
