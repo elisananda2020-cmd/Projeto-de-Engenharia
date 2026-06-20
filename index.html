@@ -19,20 +19,37 @@
       <span class="logo-sub">SGT-AC · Rio Branco</span>
     </div>
   </a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="nav-links">
     <li><a href="index.html" class="active">Início</a></li>
     <li><a href="equipe.html">Equipe</a></li>
     <li><a href="sistema.html">Sistema</a></li>
     <li><a href="arquitetura.html">Arquitetura</a></li>
     <li><a href="#contato" class="nav-cta">Contato</a></li>
   </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
+
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="index.html" class="active">Início</a></li>
+    <li><a href="equipe.html">Equipe</a></li>
+    <li><a href="sistema.html">Sistema</a></li>
+    <li><a href="arquitetura.html">Arquitetura</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</div>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-grid"></div>
   <div class="hero-blob"></div>
   <div class="hero-content">
+    <div class="hero-badge">Proposta Técnica · DETRAN-AC · 2025</div>
     <h1 class="hero-title">
       Trânsito<br>
       <em>inteligente</em><br>
@@ -69,7 +86,7 @@
   </div>
 </section>
 
-<!-- EQUIPE  -->
+<!-- EQUIPE -->
 <section class="team-section">
   <div class="section-header reveal">
     <div>
@@ -80,22 +97,34 @@
   </div>
   <div class="team-grid reveal">
     <div class="team-card">
-      <div class="team-avatar">E</div>
+      <div class="team-avatar">
+        <img src="fotos/elis.jpg" alt="Elis Ananda" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">E</span>
+      </div>
       <div class="team-name">Elis Ananda</div>
       <div class="team-role">Desenvolvedora</div>
     </div>
     <div class="team-card">
-      <div class="team-avatar">M</div>
+      <div class="team-avatar">
+        <img src="fotos/marisol.jpg" alt="Marisol Assunção" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">M</span>
+      </div>
       <div class="team-name">Marisol Assunção</div>
       <div class="team-role">Analista de Sistemas</div>
     </div>
     <div class="team-card">
-      <div class="team-avatar">N</div>
+      <div class="team-avatar">
+        <img src="fotos/nathan.jpg" alt="Nathan Rodrigues" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">N</span>
+      </div>
       <div class="team-name">Nathan Rodrigues</div>
       <div class="team-role">Arquitetura de Software</div>
     </div>
     <div class="team-card">
-      <div class="team-avatar">P</div>
+      <div class="team-avatar">
+        <img src="fotos/pamela.jpg" alt="Pâmela Bruna" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="avatar-fallback">P</span>
+      </div>
       <div class="team-name">Pâmela Bruna</div>
       <div class="team-role">Documentação · Gestão</div>
     </div>
@@ -105,7 +134,7 @@
   </div>
 </section>
 
-<!-- COMO FUNCIONA  -->
+<!-- COMO FUNCIONA -->
 <section>
   <div class="section-header reveal">
     <div>
